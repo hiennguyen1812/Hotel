@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <link rel="stylesheet" href="trangchu.css">
     <link rel="shortcut icon" href="image/favicon.png" type="image/png">
     <title>COLOURS - Website đặt phòng khách sạn giá rẻ</title>
@@ -23,19 +24,19 @@
                 </div>
                 <ul class="nav-list">
                     <li class="nav-item">
-                        <a href="trangchu.html" class="nav-link">Home</a>
+                        <a href="#heros" class="nav-link">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link">About</a>
+                        <a href="#abouts" class="nav-link">About</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link">Offers</a>
+                        <a href="#offers" class="nav-link">Offers</a>
                     </li>
-                    <li class="nav-item">
+                    <!-- <li class="nav-item">
                         <a href="#" class="nav-link">News</a>
-                    </li>
+                    </li> -->
                     <li class="nav-item">
-                        <a href="#" class="nav-link">Contact</a>
+                        <a href="#contacts" class="nav-link">Contact</a>
                     </li>
                 </ul>
             </nav>
@@ -43,7 +44,8 @@
     </header>
 
     <main>
-        <div class="hero">
+        <div class="hero" id="heros">
+            <div class="load"></div>
             <div class="container">
                 <div class="main-heading">
                     <h1 class="title">Discover</h1>
@@ -59,7 +61,7 @@
                 <form action="" class="book-form">
                     <div class="input-group">
                         <label for="destination" class="input-label">Destination</label>
-                        <input type="text" class="input" id="destination">
+                        <input type="text" class="input" onkeyup="myFunction()" id="destination">
                     </div>
                     <div class="input-group">
                         <label for="check-in" class="input-label">Check in</label>
@@ -117,7 +119,7 @@
                             <i class="fas fa-star rating"></i>
                             <i class="fas fa-star-half rating"></i>
                         </div>
-                        <a href="#" class="btn btn-gradient">Book now
+                        <a href="booking.html" class="btn btn-gradient">Book now
                             <span class="dots"><i class="fas fa-ellipsis-h"></i></span>
                         </a>
                     </div>
@@ -133,7 +135,7 @@
                             <i class="fas fa-star rating"></i>
                             <i class="fas fa-star rating"></i>
                         </div>
-                        <a href="#" class="btn btn-gradient">Book now
+                        <a href="booking.html" class="btn btn-gradient">Book now
                             <span class="dots"><i class="fas fa-ellipsis-h"></i></span>
                         </a>
                     </div>
@@ -149,7 +151,7 @@
                             <i class="fas fa-star rating"></i>
                             <i class="fas fa-star-half rating"></i>
                         </div>
-                        <a href="#" class="btn btn-gradient">Book now
+                        <a href="booking.html" class="btn btn-gradient">Book now
                             <span class="dots"><i class="fas fa-ellipsis-h"></i></span>
                         </a>
                     </div>
@@ -157,7 +159,7 @@
             </div>
         </section>
 
-        <section class="offer">
+        <section class="offer" id="offers">
             <div class="container">
                 <div class="offer-content">
                     <div class="discount">
@@ -174,7 +176,7 @@
                     <p class="paragraph">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias voluptatem consequatur eaque autem aliquam adipisci, magni ab quasi hic tempora provident facilis dolorem aperiam voluptatibus eius blanditiis ea numquam facere?
                     </p>
-                    <a href="#" class="btn btn-gradient">Offer
+                    <a href="booking.html" class="btn btn-gradient">Offer
                         <span class="dots"><i class="fas fa-ellipsis-h"></i></span>
                     </a>
                 </div>
@@ -198,7 +200,7 @@
                             <p class="paragraph">
                                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo temporibus tempore qui aperiam, perferendis quibusdam eius, sunt provident vel pariatur dolore unde, necessitatibus quaerat. Temporibus rerum earum corporis a quisquam!
                             </p>
-                            <a href="#" class="btn rooms-btn">Book now &rrarr;</a>
+                            <a href="booking.html" class="btn rooms-btn">Book now &rrarr;</a>
                         </div>
                     </div>
 
@@ -212,7 +214,7 @@
                             <p class="paragraph">
                                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo temporibus tempore qui aperiam, perferendis quibusdam eius, sunt provident vel pariatur dolore unde, necessitatibus quaerat. Temporibus rerum earum corporis a quisquam!
                             </p>
-                            <a href="#" class="btn rooms-btn">Book now &rrarr;</a>
+                            <a href="booking.html" class="btn rooms-btn">Book now &rrarr;</a>
                         </div>
                     </div>
 
@@ -226,98 +228,98 @@
                             <p class="paragraph">
                                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo temporibus tempore qui aperiam, perferendis quibusdam eius, sunt provident vel pariatur dolore unde, necessitatibus quaerat. Temporibus rerum earum corporis a quisquam!
                             </p>
-                            <a href="#" class="btn rooms-btn">Book now &rrarr;</a>
+                            <a href="booking.html" class="btn rooms-btn">Book now &rrarr;</a>
                         </div>
                     </div>
 
                     <div class="grid-item featured-rooms">
                         <div class="image-wrap">
                             <img class="room-image" src="image/room_4.jpg" alt="">
-                            <h5 class="room-name">Astro Hotel</h5>
+                            <h5 class="room-name">Enchanred Garden</h5>
                         </div>
                         <div class="room-info-wrap">
                             <span class="room-price">$200 <span class="per-night">Per night</span> </span>
                             <p class="paragraph">
                                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo temporibus tempore qui aperiam, perferendis quibusdam eius, sunt provident vel pariatur dolore unde, necessitatibus quaerat. Temporibus rerum earum corporis a quisquam!
                             </p>
-                            <a href="#" class="btn rooms-btn">Book now &rrarr;</a>
+                            <a href="booking.html" class="btn rooms-btn">Book now &rrarr;</a>
                         </div>
                     </div>
 
                     <div class="grid-item featured-rooms">
                         <div class="image-wrap">
                             <img class="room-image" src="image/room_5.jpg" alt="">
-                            <h5 class="room-name">Astro Hotel</h5>
+                            <h5 class="room-name">Enchanred Garden</h5>
                         </div>
                         <div class="room-info-wrap">
                             <span class="room-price">$200 <span class="per-night">Per night</span> </span>
                             <p class="paragraph">
                                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo temporibus tempore qui aperiam, perferendis quibusdam eius, sunt provident vel pariatur dolore unde, necessitatibus quaerat. Temporibus rerum earum corporis a quisquam!
                             </p>
-                            <a href="#" class="btn rooms-btn">Book now &rrarr;</a>
+                            <a href="booking.html" class="btn rooms-btn">Book now &rrarr;</a>
                         </div>
                     </div>
 
                     <div class="grid-item featured-rooms">
                         <div class="image-wrap">
                             <img class="room-image" src="image/room_6.jpg" alt="">
-                            <h5 class="room-name">Astro Hotel</h5>
+                            <h5 class="room-name">Enchanred Garden</h5>
                         </div>
                         <div class="room-info-wrap">
                             <span class="room-price">$200 <span class="per-night">Per night</span> </span>
                             <p class="paragraph">
                                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo temporibus tempore qui aperiam, perferendis quibusdam eius, sunt provident vel pariatur dolore unde, necessitatibus quaerat. Temporibus rerum earum corporis a quisquam!
                             </p>
-                            <a href="#" class="btn rooms-btn">Book now &rrarr;</a>
+                            <a href="booking.html" class="btn rooms-btn">Book now &rrarr;</a>
                         </div>
                     </div>
 
                     <div class="grid-item featured-rooms">
                         <div class="image-wrap">
                             <img class="room-image" src="image/room_7.jpg" alt="">
-                            <h5 class="room-name">Astro Hotel</h5>
+                            <h5 class="room-name">The Paradise Hotel</h5>
                         </div>
                         <div class="room-info-wrap">
                             <span class="room-price">$200 <span class="per-night">Per night</span> </span>
                             <p class="paragraph">
                                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo temporibus tempore qui aperiam, perferendis quibusdam eius, sunt provident vel pariatur dolore unde, necessitatibus quaerat. Temporibus rerum earum corporis a quisquam!
                             </p>
-                            <a href="#" class="btn rooms-btn">Book now &rrarr;</a>
+                            <a href="booking.html" class="btn rooms-btn">Book now &rrarr;</a>
                         </div>
                     </div>
 
                     <div class="grid-item featured-rooms">
                         <div class="image-wrap">
                             <img class="room-image" src="image/room_8.jpg" alt="">
-                            <h5 class="room-name">Astro Hotel</h5>
+                            <h5 class="room-name">The Paradise Hotel</h5>
                         </div>
                         <div class="room-info-wrap">
                             <span class="room-price">$200 <span class="per-night">Per night</span> </span>
                             <p class="paragraph">
                                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo temporibus tempore qui aperiam, perferendis quibusdam eius, sunt provident vel pariatur dolore unde, necessitatibus quaerat. Temporibus rerum earum corporis a quisquam!
                             </p>
-                            <a href="#" class="btn rooms-btn">Book now &rrarr;</a>
+                            <a href="booking.html" class="btn rooms-btn">Book now &rrarr;</a>
                         </div>
                     </div>
 
                     <div class="grid-item featured-rooms">
                         <div class="image-wrap">
                             <img class="room-image" src="image/room_9.jpg" alt="">
-                            <h5 class="room-name">Astro Hotel</h5>
+                            <h5 class="room-name">The Paradise Hotel</h5>
                         </div>
                         <div class="room-info-wrap">
                             <span class="room-price">$200 <span class="per-night">Per night</span> </span>
                             <p class="paragraph">
                                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo temporibus tempore qui aperiam, perferendis quibusdam eius, sunt provident vel pariatur dolore unde, necessitatibus quaerat. Temporibus rerum earum corporis a quisquam!
                             </p>
-                            <a href="#" class="btn rooms-btn">Book now &rrarr;</a>
+                            <a href="booking.html" class="btn rooms-btn">Book now &rrarr;</a>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="contact">
+        <section class="contact" id="contacts">
             <div class="container">
                 <h5 class="section-head">
                     <span class="heading">Contact</span>
@@ -325,9 +327,9 @@
                 </h5>
                 <div class="contact-content">
                     <div class="traveler-wrap">
-                        <img src="image/traveler (1).png" alt="">
+                        <img src="image/traveler2.png" alt="">
                     </div>
-                    <form action="" class="form contact-form">
+                    <class  class="form contact-form">
                         <div class="input-group-wrap">
                             <div class="input-group">
                                 <input type="text" class="input" placeholder="Name" required>
@@ -335,7 +337,7 @@
                             </div>
 
                             <div class="input-group">
-                                <input type="email" class="input" placeholder="E-mail" required>
+                                <input type="email" class="input" placeholder="Email" required>
                                 <span class="bar"></span>
                             </div>
                         </div>
@@ -345,19 +347,21 @@
                             </div>
 
                             <div class="input-group">
-                                <textarea  class="input" cols="30" rows="8" placeholder="Message" required></textarea>
+                                <textarea  class="input" cols="30" rows="15" placeholder="Message" required></textarea>
                                 <span class="bar"></span>
                             </div>
-                            <button type="submit" class="btn form-btn btn-purple">Send Message
-                                <span class="dots"><i class="fas fa-ellipsis-h"></i></span>
-                            </button>
+                            
+                                <button type="submit" class="btn form-btn btn-purple" >Send Message
+                                    <span class="dots"><i class="fas fa-ellipsis-h"></i></span>
+                                </button>
+                    </class>
                     </form>
                 </div>
             </div>
         </section>
     </main>
     
-    <footer class="footer">
+    <footer class="footer" id="abouts">
         <div class="container">
             <div class="footer-content">
                 <div class="footer-content-brand">
@@ -382,6 +386,8 @@
         </div>
     </footer>
 
+    
     <script src="trangchu.js"></script>
+    <!-- <script src="https://smtpjs.com/v3/smtp.js"></script>  -->
 </body>
 </html>
