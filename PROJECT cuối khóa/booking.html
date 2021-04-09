@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
-    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <link rel="stylesheet" href="booking.css">
     <link rel="shortcut icon" href="image/favicon.png" type="image/png">
     <title>BOOKING COLOURS - Website đặt phòng khách sạn giá rẻ</title>
@@ -51,29 +50,29 @@
                     <span class="sub-heading">Your "home colours"</span>
                 </h5>
                 <div class="book-content">
-                    <form action="" class="form book-form1">
+                    <form  action="/action_page.php" onsubmit="myFunction()" class="form book-form1" id="form1">
                         <div class="input-group-wrap">
                             <div class="input-group">
-                                <input type="text" class="input" placeholder="Name" required>
+                                <input type="text" class="input" placeholder="Name" id="name" required>
                                 <span class="bar"></span>
                             </div>
 
                             <div class="input-group">
-                                <input type="email" class="input" placeholder="E-mail" required>
+                                <input type="email" class="input" placeholder="E-mail" id="email" required>
                                 <span class="bar"></span>
                             </div>
 
                             <div class="input-group">
-                                <input type="text" class="input" placeholder="Phone Number">
+                                <input type="text" class="input" placeholder="Phone Number" id="phone">
                                 <span class="bar"></span>
                             </div>
                         </div>
                         <div class="input-group">
-                            <textarea  class="input" cols="30" rows="3" placeholder="Request" required></textarea>
+                            <textarea  class="input" cols="30" rows="3" placeholder="Request" id="request" required></textarea>
                             <span class="bar"></span>
                         </div>
 
-                            <button type="button" id="submit" onclick="sweetalertclick()" class="btn form-btn btn-purple">Submit
+                            <button type="submit" class="btn form-btn btn-purple">Submit
                                 <span class="dots"><i class="fas fa-ellipsis-h"></i></span>
                             </button>
                     </form>
@@ -92,7 +91,7 @@
                             </div>
                         </div>
                         <div class="number">
-                            <div class="customer">Guests per room</div>
+                            <div class="customer">Guests per room:</div>
                             <div class="number-customer">2 Guests</div>
                         </div>
                         <div class="book-img">
@@ -100,11 +99,11 @@
                             <div class="icon">
                                 <div class="eat">
                                     <i class="fas fa-utensils"></i>
-                                    <div class="name-icon1">FreeBreakfast</div>
+                                    <div class="name-icon1">Breakfast</div>
                                 </div>
                                 <div class="wifi">
                                         <i class="fas fa-wifi"></i>
-                                        <div class="name-icon2">Free Wifi</div>
+                                        <div class="name-icon2"> Wifi</div>
                                 </div>
                             </div>
                         </div>     
@@ -140,11 +139,11 @@
             </div>
         </div>
     </footer>
-    <script>
-        
-    //     $("submit").click(function(){
-    //         swal("Hello world!");        });
-    // </script>
+
+
+    <!-- <script src="dataUser.js"></script>
+    <script src="dataKS.js"></script> -->
+    <script src="booking.js"></script>
     
 </body>
 </html>
