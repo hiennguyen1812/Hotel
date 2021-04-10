@@ -14,3 +14,13 @@
 //     localStorage.setItem('formData',JSON.stringify(formData));
 //     e.preventDefault();
 // }
+
+
+
+// let nameInput=document.getElementById('name')
+// let submitBtn=document.getElementById('submit')
+// function update(params) {
+//     let newName=nameInput.value;
+//     console.log(newName);
+// }
+// submitBtn.addEventListener('click',update())

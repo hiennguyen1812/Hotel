@@ -169,6 +169,16 @@ section{
     letter-spacing: 2px;
     padding: 1rem;
 }
+
+.user{
+    display: flex;
+    color: #fff;
+}
+h5{
+    
+    /* visibility: hidden; */
+    margin: auto;
+}
 /*HERO STYLES*/
 .hero{
     width: 100%;
@@ -194,10 +204,10 @@ section{
     z-index: -1;
 }
 .load{
-    animation: slide 2s;
+    animation: slide 2s ;
 }
 @keyframes slide {
-    0%{
+    0% {
         background: url('image/background.jpg');
     }
     20%{
@@ -227,6 +237,12 @@ section{
     100%{
         background: url('image/background4');
     }
+}
+
+.music{
+    /* visibility: hidden; */
+   
+    
 }
 
 .main-heading{
