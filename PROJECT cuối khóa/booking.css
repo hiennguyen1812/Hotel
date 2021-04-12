@@ -480,20 +480,25 @@ hr{
     display: none;
 } */
 
-.confirmBooking{
+.modal{
     position: fixed;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%) ;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
     border: 1px solid black;
     border-radius: 10px;
     z-index: 10;
     background-color: white;
     width: 500px;
     height: 200px;
+    
+    
 }
 
-
+.modal.active{
+    transform: translate(-50%, -50%) scale(1);
+}
 
 .head{
     padding: 10px 15px;
@@ -507,7 +512,7 @@ hr{
     font-weight: bold;
 }
 
-.head .close{
+.head .close-button{
     cursor: pointer;
     border: none;
     outline: none;
@@ -526,7 +531,7 @@ hr{
 
 #overlay{
     position: fixed;
-    /* opacity: 0; */
+    opacity: 0;
     transition: 200ms ease-in-out;
     top: 0;
     left: 0;
@@ -536,6 +541,10 @@ hr{
     pointer-events: none;
 }
 
+#overlay.active {
+    opacity: 1;
+    pointer-events: all;
+}
 
 /* .test{
     width: 500px;
@@ -574,12 +583,3 @@ hr{
     font-weight: bold;
 } */
 
-/* #overlay{
-    position: fixed;
-    opacity: 0;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, .5);
-} */

@@ -73,7 +73,7 @@
                                 <span class="bar"></span>
                             </div>
     
-                                <button class="btn form-btn btn-purple" id="submit" onclick="booking()">Submit
+                                <button data-modal-target="#modal" class="btn form-btn btn-purple" id="submit" onclick="booking()">Submit
                                     <span class="dots"><i class="fas fa-ellipsis-h"></i></span>
                                 </button>
                         </form>
@@ -142,10 +142,10 @@
         </footer>
     </div>
 
-    <div class="confirmBooking" >
+    <div class="modal" id="modal" >
         <div class="head">
             <span class="head-text">Confirm booking</span>
-            <button  class="close">&times;</button>
+            <button data-close-button class="close-button">&times;</button>
             <!-- <p class="sub-text">Your Information Is Submited</p> -->
         </div>
         <div class="sub">Your Information Is Submited</div>
