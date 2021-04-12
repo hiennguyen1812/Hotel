@@ -1,3 +1,28 @@
+@import url('https://fonts.googleapis.com/css?family=Courgette|Open+Sans:400,800&display=swap');
+/*Basic reset*/
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*Custom properties*/
+:root {
+    --dark-color: #2d2c2c;
+    --purple-solid: #350a4f;
+    --purple-transparent: rgba(53, 10, 79, .7);
+    --purple-transparent-alt: rgba(53, 10, 79, .5);
+    --purple-light: #8f50fb;
+    --yellow-solid: #fa9e2c;
+    --gradient-color: linear-gradient(to right, var(--yellow-solid), var(--purple-light));
+    --gradient-color-alt: linear-gradient(to right, var(--purple-light), var(--yellow-solid));
+}
+html{
+    font-size: 15px;
+    scroll-behavior: smooth;
+}
+
 body{
     margin: 0;
     padding: 0;
@@ -7,6 +32,7 @@ body{
     font-family:Verdana, Geneva, Tahoma, sans-serif ;
 
 }
+
 
 .wrapper {
     width: 400px;
@@ -18,7 +44,8 @@ body{
     position: absolute;
     transform: translate(-50%,-50%);
     box-sizing: border-box;
-    box-shadow: 8px 8px 50px rgb(175, 21, 167);
+    box-shadow: 8px 8px 50px rgb(240, 240, 240);
+    border-radius: 2rem;
 }
 
 
@@ -31,21 +58,15 @@ h1{
     color: #fff;
     text-align: center;
     margin-bottom: 8%;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+    font-family: 'Courier New', Courier, monospace ;
 }
 
-/* .wrapper input {
+.wrapper input {
     width: 100%;
     margin-bottom: 20px;
-} */
-
-.wrapper button[type=submit]{
-    width: 100%;
-    margin-top: 10px;
 }
 
 .wrapper input[type=text], .wrapper input[type=password]{
-    width: 100%;
     border: none;
     border-bottom: 1px solid #ddd;
     background: transparent;
@@ -56,61 +77,41 @@ h1{
     color: #ccc;
 }
 
-/* .login-form #user-error,
-.login-form #pass-error{
-    margin-top: 5px;
-    width: 345px;
-    font-size: 18px;
-    color: #c62828;
-    background: rgba(255, 0, 0, 0.1);
-    text-align: center;
-    padding: 5px 8px;
-    border-radius: 3px;
-    border: 1px solid #ef9a9a;
-    display: none;
-} */
-
-/* .wrapper input[type=submit]{
+.wrapper input[type=submit]{
     border: none;
     outline: none;
+    width: 150px;
     height: 40px;
-    background: #f6648b;
-    color: #fff;
+    background: var(--gradient-color);
+    color: rgb(255, 255, 255);
     font-size: 14px;
     font-weight: bold;
-} */
-
-.wrapper button[type=submit]{
-    border: none;
-    outline: none;
-    height: 40px;
-    background: #f6648b;
-    color: #fff;
-    font-size: 14px;
-    font-weight: bold;
+    border-radius: 10rem;
+    
 }
 
-/* .wrapper input[type=submit]:hover{
-    cursor: pointer;
-} */
+.wrapper input[value=LOGIN] {
+    margin-left: 25%;
+}
 
-.wrapper button[type=submit]:hover{
+.wrapper input[type=submit]:hover{
     cursor: pointer;
+    
 }
 
 .wrapper input::placeholder {
-    color: #fff;
+    color: rgb(255, 255, 255);
 }
 
 .wrapper a{
     font-size: 14px;
     text-decoration: none;
-    color: #fff;
+    color: rgb(255, 255, 255);
     opacity: 0.8;
 }
 
 .wrapper a :hover {
-    color: #fff;
+    color: rgb(255, 255, 255);
     opacity: 1;
 }
 
@@ -127,10 +128,10 @@ h1{
     float: right;
 }
 
-.socials {
+/* .socials {
     margin-top: 12%;
     text-align: center;
-}
+} */
 
 /* .socials a{
     width: 30px;

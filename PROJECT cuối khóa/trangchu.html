@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
     <link rel="stylesheet" href="trangchu.css">
     <link rel="shortcut icon" href="image/favicon.png" type="image/png">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">  <!-- Hiệu ứng chuyển danh sách ks -->
     <title>COLOURS - Website đặt phòng khách sạn giá rẻ</title>
 </head>
 <body>
@@ -43,9 +44,9 @@
                     <li class="nav-item">
                         <h5>thedat</h5>
                     </li> -->
-                    <div class="user">
+                    <div class="user" >
                         <a href="login/login.html" class="sm-link"><i class="fas fa-user-circle"></i></a>
-                        <h5 class="userName">thedat</h5>
+                        <h5 class="userName" id="name"></h5>
                     </div>
                     
                    
@@ -59,10 +60,10 @@
             <div class="load"></div>
             <div class="container">
                 <div class="main-heading">
-                    <h1 class="title">Discover</h1>
-                    <h2 class="subtitle">Luxury hotels</h2>
+                    <h1 class="title" data-aos="fade-zoom-in" data-aos-duration="3000">Discover</h1>
+                    <h2 class="subtitle" data-aos="fade-right" data-aos-duration="2000">Luxury hotels</h2>
                 </div>
-                <a href="#hotel" class="btn btn-gradient">Explore now
+                <a href="#hotel" class="btn btn-gradient" data-aos="fade-left" data-aos-duration="2000">Explore now
                     <span class="dots"><i class="fas fa-ellipsis-h"></i></span>
                 </a>
             </div>
@@ -116,11 +117,11 @@
         <section class="hotels" id="hotel">
             <div class="container">
                 <h5 class="section-head">
-                    <span class="heading">Explore</span>
-                    <span class="sub-heading">Our beautiful hotels</span>
+                    <span class="heading" data-aos="fade-down" data-aos-anchor-placement="top-bottom" data-aos-duration="3000">Explore</span>
+                    <span class="sub-heading" data-aos="fade-up" data-aos-duration="3000">Our beautiful hotels</span>
                 </h5>
                 <div class="grid">
-                    <div class="grid-item featured-hotels">
+                    <div class="grid-item featured-hotels" data-aos="fade-right" data-aos-duration="2000">
                         <img src="image/hotel_astro_resort.jpg" alt="" class="hotel-image">
                         <h5 class="hotel-name">Astro Hotel</h5>
                         <span class="hotel-price">From $200/Night</span>
@@ -136,7 +137,7 @@
                         </a>
                     </div>
 
-                    <div class="grid-item featured-hotels">
+                    <div class="grid-item featured-hotels" data-aos="zoom-in-up" data-aos-duration="2000">
                         <img src="image/hotel_the_enchanted_garden.jpg" alt="" class="hotel-image">
                         <h5 class="hotel-name">Enchanred Garden</h5>
                         <span class="hotel-price">From $300/Night</span>
@@ -152,7 +153,7 @@
                         </a>
                     </div>
 
-                    <div class="grid-item featured-hotels">
+                    <div class="grid-item featured-hotels" data-aos="fade-left" data-aos-duration="2000">
                         <img src="image/hotel_the_paradise.jpg" alt="" class="hotel-image">
                         <h5 class="hotel-name">The Paradise Hotel</h5>
                         <span class="hotel-price">From $350/Night</span>
@@ -188,7 +189,7 @@
                     <p class="paragraph">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias voluptatem consequatur eaque autem aliquam adipisci, magni ab quasi hic tempora provident facilis dolorem aperiam voluptatibus eius blanditiis ea numquam facere?
                     </p>
-                    <a href="booking.html" class="btn btn-gradient">Offer
+                    <a href="login/login.html" class="btn btn-gradient">Offer
                         <span class="dots"><i class="fas fa-ellipsis-h"></i></span>
                     </a>
                 </div>
@@ -198,11 +199,11 @@
         <section class="rooms">
             <div class="container">
                 <h5 class="section-head">
-                    <span class="heading">Luxurious</span>
+                    <span class="heading" data-aos="zoom-in" data-aos-duration="3000">Luxurious</span>
                     <span class="sub-heading">Affordable rooms</span>
                 </h5>
                 <div class="grid rooms-grid">
-                    <div class="grid-item featured-rooms">
+                    <div class="grid-item featured-rooms" data-aos="fade-down-right" data-aos-duration="2000">
                         <div class="image-wrap">
                             <img class="room-image" src="image/room_1.jpg" alt="">
                             <h5 class="room-name">Astro Hotel</h5>
@@ -216,7 +217,7 @@
                         </div>
                     </div>
 
-                    <div class="grid-item featured-rooms">
+                    <div class="grid-item featured-rooms" data-aos="fade-down" data-aos-duration="2000">
                         <div class="image-wrap">
                             <img class="room-image" src="image/room_2.jpg" alt="">
                             <h5 class="room-name">Astro Hotel</h5>
@@ -230,7 +231,7 @@
                         </div>
                     </div>
 
-                    <div class="grid-item featured-rooms">
+                    <div class="grid-item featured-rooms" data-aos="fade-down-left" data-aos-duration="2000">
                         <div class="image-wrap">
                             <img class="room-image" src="image/room_3.jpg" alt="">
                             <h5 class="room-name">Astro Hotel</h5>
@@ -244,7 +245,7 @@
                         </div>
                     </div>
 
-                    <div class="grid-item featured-rooms">
+                    <div class="grid-item featured-rooms" data-aos="fade-right" data-aos-duration="2000">
                         <div class="image-wrap">
                             <img class="room-image" src="image/room_4.jpg" alt="">
                             <h5 class="room-name">Enchanred Garden</h5>
@@ -258,7 +259,7 @@
                         </div>
                     </div>
 
-                    <div class="grid-item featured-rooms">
+                    <div class="grid-item featured-rooms" data-aos="zoom-in" data-aos-duration="2000">
                         <div class="image-wrap">
                             <img class="room-image" src="image/room_5.jpg" alt="">
                             <h5 class="room-name">Enchanred Garden</h5>
@@ -272,7 +273,7 @@
                         </div>
                     </div>
 
-                    <div class="grid-item featured-rooms">
+                    <div class="grid-item featured-rooms" data-aos="fade-left" data-aos-duration="2000">
                         <div class="image-wrap">
                             <img class="room-image" src="image/room_6.jpg" alt="">
                             <h5 class="room-name">Enchanred Garden</h5>
@@ -286,7 +287,7 @@
                         </div>
                     </div>
 
-                    <div class="grid-item featured-rooms">
+                    <div class="grid-item featured-rooms" data-aos="fade-up-right" data-aos-duration="2000">
                         <div class="image-wrap">
                             <img class="room-image" src="image/room_7.jpg" alt="">
                             <h5 class="room-name">The Paradise Hotel</h5>
@@ -300,7 +301,7 @@
                         </div>
                     </div>
 
-                    <div class="grid-item featured-rooms">
+                    <div class="grid-item featured-rooms" data-aos="fade-up" data-aos-duration="2000">
                         <div class="image-wrap">
                             <img class="room-image" src="image/room_8.jpg" alt="">
                             <h5 class="room-name">The Paradise Hotel</h5>
@@ -314,7 +315,7 @@
                         </div>
                     </div>
 
-                    <div class="grid-item featured-rooms">
+                    <div class="grid-item featured-rooms" data-aos="fade-up-left" data-aos-duration="2000">
                         <div class="image-wrap">
                             <img class="room-image" src="image/room_9.jpg" alt="">
                             <h5 class="room-name">The Paradise Hotel</h5>
@@ -334,40 +335,40 @@
         <section class="contact" id="contacts">
             <div class="container">
                 <h5 class="section-head">
-                    <span class="heading">Contact</span>
+                    <span class="heading" data-aos="fade-up" data-aos-duration="2000" data-aos-anchor-placement="bottom-bottom">Contact</span>
                     <span class="sub-heading">Get in touch witch us</span>
                 </h5>
                 <div class="contact-content">
                     <div class="traveler-wrap">
                         <img src="image/traveler2.png" alt="">
                     </div>
-                    <class  class="form contact-form">
+                    <form  action="javascript:sendMail()" class="form contact-form"  method="POST">
                         <div class="input-group-wrap">
                             <div class="input-group">
-                                <input type="text" class="input" placeholder="Name" required>
+                                <input type="text" class="input" placeholder="Name"  id="name" required>
                                 <span class="bar"></span>
                             </div>
 
                             <div class="input-group">
-                                <input type="email" class="input" placeholder="Email" required>
+                                <input type="email" class="input" placeholder="Email" id="email" required>
                                 <span class="bar"></span>
                             </div>
                         </div>
                             <div class="input-group">
-                                <input type="text" class="input" placeholder="Subject">
+                                <input type="text" class="input" placeholder="Subject" id="subject">
                                 <span class="bar"></span>
                             </div>
 
                             <div class="input-group">
-                                <textarea  class="input" cols="30" rows="15" placeholder="Message" required></textarea>
+                                <textarea  class="input" cols="30" rows="15" placeholder="Message" id="message" required></textarea>
                                 <span class="bar"></span>
                             </div>
                             
                                 <button type="submit" class="btn form-btn btn-purple" >Send Message
                                     <span class="dots"><i class="fas fa-ellipsis-h"></i></span>
                                 </button>
-                    </class>
                     </form>
+                    
                 </div>
             </div>
         </section>
@@ -401,9 +402,15 @@
         </div>
     </footer>
 
-    <script src="dataUser.js"></script>
-    <script src="dataKS.js"></script>
-    <script src="trangchu.js"></script>
-    <!-- <script src="https://smtpjs.com/v3/smtp.js"></script>  -->
+    <script src="data/dataUser.js"></script>
+    <script src="data/dataKS.js"></script>
+    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>  <!-- Hiệu ứng chuyển danh sách ks-->
+    <script>
+        AOS.init();
+      </script>
+     
+      <script src="trangchu.js"></script>
+    <script src="login/login.js"></script>
 </body>
 </html>

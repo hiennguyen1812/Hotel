@@ -5,7 +5,10 @@ let dataUsers = [
         mailUser: 'td12a11haiha@gmail.com',
         sdtUser: '0352393790',
         ngayCI: '13/02/2020',
-        ngayCO: '15/02/2020'
+        ngayCO: '15/02/2020',
+        userName: 'haiha1302',
+        passWord: 'haiha13022000',
+        isLogin: false
     },
     {
         idUser: 2,
@@ -13,7 +16,10 @@ let dataUsers = [
         mailUser: 'dat9d3@gmail.com',
         sdtUser: '0399168650',
         ngayCI: '27/04/2021',
-        ngayCO: '30/04/2021'
+        ngayCO: '30/04/2021',
+        userName: 'datco123',
+        passWord: 'datco123',
+        isLogin: false
     },
     {
         idUser: 3,
@@ -21,7 +27,10 @@ let dataUsers = [
         mailUser: 'hienyeuha1806@gmail.com',
         sdtUser: '0921803361',
         ngayCI: '01/06/2021',
-        ngayCO: '02/06/2021'
+        ngayCO: '02/06/2021',
+        userName: 'syhien123',
+        passWord: 'emhien123',
+        isLogin: false
     }
 ]
 

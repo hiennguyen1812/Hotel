@@ -24,3 +24,32 @@
 //     console.log(newName);
 // }
 // submitBtn.addEventListener('click',update())
+
+var submitBtn=document.getElementById('submit');
+
+
+function booking(){
+    event.preventDefault()
+    var nameInput=document.getElementById('name').value
+    var emailInput=document.getElementById('email').value
+    var phoneInput=document.getElementById('phone').value
+    var requestInput=document.getElementById('request').value
+
+    dataCustomer.push({
+        name:`${nameInput}`,
+        email:`${emailInput}`,
+        phoneNumber:`${phoneInput}`,
+        request:`${requestInput}`
+
+        
+    })
+    localStorage.setItem('Customer',JSON.stringify(dataCustomer))
+    let data=JSON.parse(localStorage.getItem('Customer'))
+    console.log(data);
+}
+
+
+
+
+
+

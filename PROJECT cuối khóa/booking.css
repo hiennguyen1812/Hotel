@@ -465,3 +465,121 @@ hr{
         min-height: 4rem;
     }
 }
+
+/* .confirm-booking{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    
+    top: 0;
+    background-color:black;
+    opacity: 0.8;
+    display: none;
+} */
+
+.confirmBooking{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) ;
+    border: 1px solid black;
+    border-radius: 10px;
+    z-index: 10;
+    background-color: white;
+    width: 500px;
+    height: 200px;
+}
+
+
+
+.head{
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.head .head-text{
+    font-size: 2rem;
+    font-family:'Courgette',cursive ;
+    font-weight: bold;
+}
+
+.head .close{
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.sub{
+    font-size: 3rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-top: 3rem;
+    text-align: center
+}
+
+#overlay{
+    position: fixed;
+    /* opacity: 0; */
+    transition: 200ms ease-in-out;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .5);
+    pointer-events: none;
+}
+
+
+/* .test{
+    width: 500px;
+    height: 200px;
+    position: fixed;
+    opacity: 1;
+    border-radius: 8px;
+    
+    background-color:white;
+    z-index: 10;
+}
+.head-text{
+    font-size: 2rem;
+    font-family:'Courgette',cursive ;
+    font-weight: 300;
+    color: var(--dark-color);
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.sub-text{
+    font-size: 3rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-top: 3rem;
+    text-align: center
+}
+
+.head-text .close{
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 3rem;
+    font-weight: bold;
+} */
+
+/* #overlay{
+    position: fixed;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .5);
+} */

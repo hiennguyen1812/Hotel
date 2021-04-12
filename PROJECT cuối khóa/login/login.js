@@ -12,21 +12,36 @@
 //     }
 // }
 
-let obj=[
-    {
-        username:"sam",
-        password:"1234"
-    }
-]
-
-let usernameInput=document.getElementById('username');
-let passwordInput=document.getElementById('password');
-let submitBtn=document.getElementById('submit');
-function getInfor() {
-    for(item of obj){
-        if(usernameInput.value==item.username){
-            alert('true');
+let btnLoginClick = document.getElementById('btn-login')
+// let nameText=document.getElementById('name')
+// console.log(nameText);
+function checkUser() {
+    event.preventDefault()
+    var userNameInput = document.getElementById('user-name').value
+    var passWordInput = document.getElementById('pass-word').value
+    var check
+    for (i = 0; i < dataUsers.length; i++) {
+        if(userNameInput == dataUsers[i].userName && passWordInput == dataUsers[i].passWord) {
+            check = true
+            dataUsers[i].isLogin = true
+            
+            //  console.log(dataUsers)
+            break
         }
     }
+    if(check == true) {
+        alert(`Bạn đăng nhập thành công`)
+        userNameInput.innerHTML=nameText;
+        window.location.href = 'http://127.0.0.1:5501/trangchu.html'
+    }
+    else {
+        alert(`Đăng nhập thất bại`)
+    }
 }
-submitBtn.addEventListener('click',getInfor());
+
+// localStorage.setItem('data',JSON.stringify(dataUsers))
+
+// let dataUser=JSON.parse(localStorage.getItem('data'))
+// console.log(dataUser);
+
+
