@@ -25,6 +25,11 @@
 // }
 // submitBtn.addEventListener('click',update())
 
+
+
+
+
+//add thông tin khách hàng vào localstorage
 var submitBtn=document.getElementById('submit');
 
 
@@ -48,7 +53,7 @@ function booking(){
     console.log(data);
 }
 
-
+// ấn submit hiện thông báo
 const openButton=document.querySelectorAll('[data-modal-target]')
 const closeButton=document.querySelectorAll('[data-close-button]')
 const overlay=document.getElementById('overlay')

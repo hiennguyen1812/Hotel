@@ -1,47 +1,43 @@
-// var username=document.forms['form']['username'];
-// var password=document.forms['form']['password'];
-
-// var userError=document.getElementById('user-error');
-// var passError=document.getElementById('pass-error');
-
-// function validated() {
-//     if(username.value.lenght < 9){
-//         username.style.border ="1px solid red";
-//         username.focus();
-//         return false;
-//     }
-// }
-
 let btnLoginClick = document.getElementById('btn-login')
-// let nameText=document.getElementById('name')
-// console.log(nameText);
+// console.log(dataUsers)
+
 function checkUser() {
     event.preventDefault()
     var userNameInput = document.getElementById('user-name').value
     var passWordInput = document.getElementById('pass-word').value
+   
     var check
     for (i = 0; i < dataUsers.length; i++) {
         if(userNameInput == dataUsers[i].userName && passWordInput == dataUsers[i].passWord) {
             check = true
             dataUsers[i].isLogin = true
-            
-            //  console.log(dataUsers)
+            console.log(dataUsers)
             break
         }
     }
-    if(check == true) {
-        alert(`Bạn đăng nhập thành công`)
-        userNameInput.innerHTML=nameText;
-        window.location.href = 'http://127.0.0.1:5501/trangchu.html'
+    if(check === true) {
+        location.href='../trangchu.html'
+        for(let user of dataUsers) {
+            if(user.isLogin === true) {
+                localStorage.setItem('user', JSON.stringify(user))
+            }
+        }   
+        // localStorage.clear()
     }
     else {
         alert(`Đăng nhập thất bại`)
     }
+    let nameId = document.getElementById('nameId')
+    console.log(dataUsers)
+
+    for(data of dataUsers) {
+        if(data.isLogin == true) {
+            nameId.innerHTML = `<a href="login/login.html" class="sm-link"><i class="fas fa-user-circle"></i></a>
+                                    <h5 class="userName" id="nameId">${newData.value}</h5>`
+        }
+    }
 }
 
-// localStorage.setItem('data',JSON.stringify(dataUsers))
 
-// let dataUser=JSON.parse(localStorage.getItem('data'))
-// console.log(dataUser);
 
 

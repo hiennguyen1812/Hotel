@@ -44,10 +44,13 @@
                     <li class="nav-item">
                         <h5>thedat</h5>
                     </li> -->
-                    <div class="user" >
+                    <div class="user" id="nameId">
                         <a href="login/login.html" class="sm-link"><i class="fas fa-user-circle"></i></a>
-                        <h5 class="userName" id="name"></h5>
+                        <h5 class="userName"></h5>
                     </div>
+                   <div class="logout">
+                    <a href="#" id="clear-local">Log Out</a>
+                   </div>
                     
                    
                 </ul>
@@ -74,10 +77,10 @@
                 <form action="" class="book-form">
                     <div class="input-group">
                         <label for="destination" class="input-label">Destination</label>
-                        <input type="text" class="input" onkeyup="myFunction()" id="destination">
+                        <input type="text" class="input"  id="destination">
                     </div>
                     <div class="input-group">
-                        <label for="check-in" class="input-label">Check in</label>
+                        <label for="check-in" class="input-label" >Check in</label>
                         <input type="date" class="input" id="check-in">
                     </div>
                     <div class="input-group">
@@ -107,7 +110,7 @@
                             <option value="0">5</option>
                         </select>
                     </div>
-                    <button type="submit" class="btn form-btn btn-purple">Search
+                    <button type="submit" class="btn form-btn btn-purple" id="search">Search
                         <span class="dots"><i class="fas fa-ellipsis-h"></i></span>
                     </button>
                 </form>
@@ -404,13 +407,11 @@
 
     <script src="data/dataUser.js"></script>
     <script src="data/dataKS.js"></script>
-    
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>  <!-- Hiệu ứng chuyển danh sách ks-->
     <script>
         AOS.init();
       </script>
-     
-      <script src="trangchu.js"></script>
+    <script src="trangchu.js"></script>
     <script src="login/login.js"></script>
 </body>
 </html>

@@ -7,7 +7,7 @@ let dataUsers = [
         ngayCI: '13/02/2020',
         ngayCO: '15/02/2020',
         userName: 'haiha1302',
-        passWord: 'haiha13022000',
+        passWord: '123',
         isLogin: false
     },
     {
@@ -18,7 +18,7 @@ let dataUsers = [
         ngayCI: '27/04/2021',
         ngayCO: '30/04/2021',
         userName: 'datco123',
-        passWord: 'datco123',
+        passWord: '234',
         isLogin: false
     },
     {
@@ -29,7 +29,7 @@ let dataUsers = [
         ngayCI: '01/06/2021',
         ngayCO: '02/06/2021',
         userName: 'syhien123',
-        passWord: 'emhien123',
+        passWord: '345',
         isLogin: false
     }
 ]
