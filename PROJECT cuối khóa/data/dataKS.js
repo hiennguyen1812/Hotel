@@ -7,6 +7,7 @@ let dataHotel = [
         giaThue: '200$',
         checkin:'2021-07-12',
         checkout:'2021-07-20',
+        guest:2,
         image:'image/room_1.jpg'
     },
     {
@@ -17,6 +18,7 @@ let dataHotel = [
         giaThue: '250$',
         checkin:'2021-04-16',
         checkout:'2021-04-29',
+        guest:4,
         image:'image/room_2.jpg'
     },
     {
@@ -27,6 +29,7 @@ let dataHotel = [
         giaThue: '300$',
         checkin:'2021-05-21',
         checkout:'2021-05-27',
+        guest:6,
         image:'image/room_3.jpg'
     },
     {
@@ -37,6 +40,7 @@ let dataHotel = [
         giaThue: '200$',
         checkin:'2021-10-1',
         checkout:'2021-10-10',
+        guest:2,
         image:'image/room_4.jpg'
     },
     {
@@ -47,6 +51,7 @@ let dataHotel = [
         giaThue: '250$',
         checkin:'2021-09-08',
         checkout:'2021-09-28',
+        guest:4,
         image:'image/room_5.jpg'
     },
     {
@@ -57,6 +62,7 @@ let dataHotel = [
         giaThue: '300$',
         checkin:'2021-11-05',
         checkout:'2021-11-20',
+        guest:6,
         image:'image/room_6.jpg'
     },
     {
@@ -67,6 +73,7 @@ let dataHotel = [
         giaThue: '200$',
         checkin:'2021-12-02',
         checkout:'2021-12-31',
+        guest:2,
         image:'image/room_7.jpg'
     },
     {
@@ -74,9 +81,10 @@ let dataHotel = [
         tenKS: 'The Paradise Hotel',
         diaChiKS: 'Số 15, Phố Ngô Quyền, Quận Hoàn Kiếm, Quận Hoàn Kiếm, Hà Nội, Việt Nam, ',
         viTri: 'Quang Ninh',
-        giaThue: '300$',
+        giaThue: '250$',
         checkin:'2021-01-01',
         checkout:'2021-01-26',
+        guest:4,
         image:'image/room_8.jpg'
     },
     {
@@ -87,6 +95,7 @@ let dataHotel = [
         giaThue: '300$',
         checkin:'2021-02-02',
         checkout:'2021-02-27',
+        guest:6,
         image:'image/room_9.jpg'
     },
 

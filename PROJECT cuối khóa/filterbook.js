@@ -13,9 +13,10 @@ for (let data of dataKhachsan) {
         <span class="room-price">${data.giaThue} <span class="per-night">Per night</span> </span>
         <p class="paragraph">
             Check In:${data.checkin}<br>
-            Check Out:${data.checkout}
+            Check Out:${data.checkout}<br>
+            Guests per room:${data.guest}
         </p>
-        <a href="" class="btn rooms-btn" id="bookBtn">Book now &rrarr;</a>
+        <a href="booking.html" id="${data.idKS}" class="btn rooms-btn bookBtn">Book now &rrarr;</a>
     </div>
     </div>
     `
@@ -23,13 +24,19 @@ for (let data of dataKhachsan) {
 }
 
 
-let bookBtn=document.getElementById('bookBtn')
-let paragraph=document.getElementsByClassName('paragraph')
-function booking(){
-    event.preventDefault()
-    console.log(paragraph);
-}
-bookBtn.addEventListener('click',booking)
+let bookBtn=document.getElementsByClassName('bookBtn')
 
+
+for(let btn of bookBtn){
+    btn.addEventListener('click',() => {
+        event.preventDefault()
+        for(let data of dataKhachsan) {
+            if(data.idKS == btn.id) {
+                localStorage.setItem('infoCheck',JSON.stringify(data))
+                location.href='booking.html'
+            }
+        }
+    })
+}
 
 

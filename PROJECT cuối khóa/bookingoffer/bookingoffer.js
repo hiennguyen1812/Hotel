@@ -86,28 +86,28 @@ function closeModal(modal){
 
 // hiện thông tin ngày check
 let info=document.getElementById('infoDateCheck')
-let dateCheck=JSON.parse(localStorage.getItem('infoCheck'))
-
-let form =`
+let Check=JSON.parse(localStorage.getItem('dataDiscount'))
+console.log(Check);
+let form1 =`
                 <div class="name-info">
                 <i class="far fa-building"></i></a>
-                <h3>${dateCheck.tenKS}</h3>
-                <h3>${dateCheck.giaThue}</h3>
+                <h3>${Check.tenKS}</h3>
+                <h3>${Check.giaThue}</h3>
             </div>
             <div class="date">
                 <div class="check">Check In:
-                    <div class="date-check1">${dateCheck.checkin}</div>
+                    <div class="date-check1">${Check.checkin}</div>
                 </div>
                 <div class="check">Check Out:
-                    <div class="date-check2">${dateCheck.checkout}</div>
+                    <div class="date-check2">${Check.checkout}</div>
                 </div>
             </div>
             <div class="number">
                 <div class="customer">Guests per room:</div>
-                <div class="number-customer">${dateCheck.guest} Guests</div>
+                <div class="number-customer">${Check.guest} Guests</div>
             </div>
             <div class="book-img">
-                <img src="${dateCheck.image}" alt="">
+                <img src="${Check.image}" alt="">
                 <div class="icon">
                     <div class="eat">
                         <i class="fas fa-utensils"></i>
@@ -120,7 +120,7 @@ let form =`
                 </div>
             </div>     
     `
-    info.innerHTML += form
+    info.innerHTML = form1
 
 
 
