@@ -22,6 +22,20 @@ for(let i = 0; i < 7; i+=3) {
     </div>`
     grid.innerHTML += ele
 }
+let bookBtn=document.getElementsByClassName('bookBtn')
+
+
+for(let btn of bookBtn){
+    btn.addEventListener('click',() => {
+        event.preventDefault()
+        for(let data of dataHotel) {
+            if(data.idKS == btn.id) {
+                localStorage.setItem('infoCheck',JSON.stringify(data))
+                location.href='booking.html'
+            }
+        }
+    })
+}
 
 
 window.addEventListener('scroll',function(){
@@ -83,19 +97,61 @@ searchButton.addEventListener('click',filtersearch);
 
 
 //
-let bookBtn=document.getElementsByClassName('bookBtn')
+
+let bookSpace=document.getElementById('book')
+
+for(let room of dataHotel){
+    let space=`
+    <div class="grid-item featured-rooms" data-aos="fade-down-right" data-aos-duration="2000">
+                        <div class="image-wrap">
+                            <img class="room-image" src="${room.image}" alt="">
+                            <h5 class="room-name">${room.tenKS}</h5>
+                        </div>
+                        <div class="room-info-wrap">
+                            <span class="room-price">${room.giaThue} <span class="per-night">Per night</span> </span>
+                            <p class="paragraph">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo temporibus tempore qui
+                                aperiam, perferendis quibusdam eius, sunt provident vel pariatur dolore unde,
+                                necessitatibus quaerat. Temporibus rerum earum corporis a quisquam!
+                            </p>
+                            <a href="booking.html" id="${room.idKS}" class="btn rooms-btn bookBtn">Book now &rrarr;</a>
+                        </div>
+    </div>
+    `
+    bookSpace.innerHTML+=space
+}
+
 
 for(let btn of bookBtn){
     btn.addEventListener('click',() => {
         event.preventDefault()
         for(let item of dataHotel){
-            if(item.idKS == event.target.id) {
+            if(item.idKS == btn.id) {
                 localStorage.setItem('infoCheck',JSON.stringify(item))
-                location.href = "booking.html"     
+                location.href = "booking.html"
             }
         }
     })
 }
+
+
+// function sendEmail(){
+//     var subject=document.getElementById('subject').value;
+//     var message=document.getElementById('message').value;
+
+//     Email.send({
+//         SecureToken : " 1051cc25-43f3-4aab-adbc-e0d742387a52",
+//         To : 'thedat237@gmail.com',
+//         From : "dat9d3@gmail.com",
+//         Subject : subject,
+//         Body : message
+//     }).then(function(message){
+//         alert('your email sent successfully')
+//     });
+// }
+
+
+
 
 
 
